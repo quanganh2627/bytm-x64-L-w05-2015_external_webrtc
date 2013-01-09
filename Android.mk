@@ -31,10 +31,10 @@ include $(MY_WEBRTC_ROOT_PATH)/src/modules/audio_coding/codecs/isac/fix/source/A
 include $(MY_WEBRTC_ROOT_PATH)/src/common_audio/signal_processing/Android.mk
 
 # build .so
-LOCAL_PATH := $(call my-dir)
+LOCAL_PATH := $(MY_WEBRTC_ROOT_PATH)
 
 include $(CLEAR_VARS)
-include $(LOCAL_PATH)/../../external/webrtc/android-webrtc.mk
+include $(LOCAL_PATH)/android-webrtc.mk
 
 LOCAL_ARM_MODE := arm
 LOCAL_MODULE := libwebrtc_audio_preprocessing
