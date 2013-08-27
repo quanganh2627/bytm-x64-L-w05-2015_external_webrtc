@@ -22,10 +22,10 @@ include $(MY_WEBRTC_ROOT_PATH)/src/modules/audio_processing/utility/Android.mk
 include $(MY_WEBRTC_ROOT_PATH)/src/system_wrappers/source/Android.mk
 
 # build .so
-LOCAL_PATH := $(MY_WEBRTC_ROOT_PATH)
+LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-include $(LOCAL_PATH)/android-webrtc.mk
+include $(LOCAL_PATH)/../../external/webrtc/android-webrtc.mk
 
 LOCAL_ARM_MODE := arm
 LOCAL_MODULE := libwebrtc_audio_preprocessing
