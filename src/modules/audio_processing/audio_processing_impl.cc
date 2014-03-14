@@ -269,7 +269,7 @@ int AudioProcessingImpl::ProcessStream(AudioFrame* frame) {
     return kBadNumberChannelsError;
   }
 
-  if (frame->_payloadDataLengthInSamples != samples_per_channel_) {
+  if (frame->_payloadDataLengthInSamples != (samples_per_channel_ * num_input_channels_)) {
     return kBadDataLengthError;
   }
 
