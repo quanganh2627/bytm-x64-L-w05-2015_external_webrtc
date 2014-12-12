@@ -62,7 +62,7 @@ WebRtc_Word32 WebRtcAgc_ProcessDigital(DigitalAgc_t *digitalAgcInst, const WebRt
 WebRtc_Word32 WebRtcAgc_AddFarendToDigital(DigitalAgc_t *digitalAgcInst, const WebRtc_Word16 *inFar,
                                  WebRtc_Word16 nrSamples);
 
-void WebRtcAgc_InitVad(AgcVad_t *vadInst);
+void WebRtcAgc_InitVad(AgcVad_t *state);
 
 WebRtc_Word16 WebRtcAgc_ProcessVad(AgcVad_t *vadInst, // (i) VAD state
                             const WebRtc_Word16 *in, // (i) Speech signal
